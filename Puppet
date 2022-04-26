@@ -1,0 +1,9 @@
+Puppet is two things: a language for expressing the desired state (how your nodes should be 
+configured), and an engine that interprets code written in the Puppet language and applies it 
+to the nodes to bring about the desired state.
+What does this language look like? It's not exactly a series of instructions, like a shell script or 
+a Ruby program. It's more like a set of declarations about the way things should be. Have a 
+look at the following example:
+package { 'curl':
+ ensure => installed,
+}
